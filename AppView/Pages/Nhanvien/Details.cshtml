@@ -1,0 +1,55 @@
+﻿@page
+@model AppView.Pages.Nhanvien.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>NhanVien</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.Ten)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.Ten)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.Tuoi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.Tuoi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.Role)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.Role)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.Luong)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.Luong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanVien.TrangThai)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NhanVien.TrangThai)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.NhanVien.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

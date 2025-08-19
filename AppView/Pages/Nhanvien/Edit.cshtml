@@ -1,0 +1,60 @@
+﻿@page
+@model AppView.Pages.Nhanvien.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>NhanVien</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NhanVien.ID" />
+            <div class="form-group">
+                <label asp-for="NhanVien.Ten" class="control-label"></label>
+                <input asp-for="NhanVien.Ten" class="form-control" />
+                <span asp-validation-for="NhanVien.Ten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhanVien.Tuoi" class="control-label"></label>
+                <input asp-for="NhanVien.Tuoi" class="form-control" />
+                <span asp-validation-for="NhanVien.Tuoi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhanVien.Role" class="control-label"></label>
+                <input asp-for="NhanVien.Role" class="form-control" />
+                <span asp-validation-for="NhanVien.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhanVien.Email" class="control-label"></label>
+                <input asp-for="NhanVien.Email" class="form-control" />
+                <span asp-validation-for="NhanVien.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NhanVien.Luong" class="control-label"></label>
+                <input asp-for="NhanVien.Luong" class="form-control" />
+                <span asp-validation-for="NhanVien.Luong" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NhanVien.TrangThai" /> @Html.DisplayNameFor(model => model.NhanVien.TrangThai)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
