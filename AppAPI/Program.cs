@@ -10,10 +10,22 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 
+// CORS cấu hình ở đây
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
-var app = builder.Build();
+var app = builder.Build(); // Phải build trước khi dùng app
 
+// Middleware
 app.UseHttpsRedirection();
+app.UseCors("AllowAll"); // Gọi sau khi build
 app.UseAuthorization();
 
 app.MapControllers(); // Kích hoạt các controller

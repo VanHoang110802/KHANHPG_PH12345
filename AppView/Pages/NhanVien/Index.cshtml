@@ -1,0 +1,41 @@
+﻿@page
+@model AppView.Pages.NhanVien.IndexModel
+@{
+}
+<h2>Danh sách nhân viên</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <!-- <th>ID</th> --> <!-- ❌ Không hiển thị -->
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Vai trò</th>
+            <th>Email</th>
+            <th>Lương</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.DanhSachNhanVien.Any())
+        {
+            foreach (var nv in Model.DanhSachNhanVien)
+            {
+                <tr>
+                    <td>@nv.Ten</td>
+                    <td>@nv.Tuoi</td>
+                    <td>@nv.Role</td>
+                    <td>@nv.Email</td>
+                    <td>@nv.Luong.ToString("N0")</td>
+                    <td>@(nv.TrangThai ? "Hoạt động" : "Ngừng")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">Không có dữ liệu để hiển thị.</td>
+            </tr>
+        }
+    </tbody>
+</table>

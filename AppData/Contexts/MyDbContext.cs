@@ -17,7 +17,7 @@ namespace AppData.Contexts
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=MAY-21\\SQLEXPRESS;Database=KHANHPG_PH12345;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-DG3SFBV\\SQLEXPRESS;Initial Catalog=Hoangtv_Ph31092;User ID=sa;Password=11082002;TrustServerCertificate=True;");
             }
         }
     }
