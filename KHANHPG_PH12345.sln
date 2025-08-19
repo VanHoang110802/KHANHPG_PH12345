@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppData", "AppData\AppData.csproj", "{BE48258F-36BE-4D33-ADA5-D19C07B703CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAPI", "AppAPI\AppAPI.csproj", "{ECDC1CA6-7FC8-463C-B5ED-DA1E0D997B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppView", "AppView\AppView.csproj", "{CEC4B77B-AA86-4E84-8703-2630EA68CBF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE48258F-36BE-4D33-ADA5-D19C07B703CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE48258F-36BE-4D33-ADA5-D19C07B703CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE48258F-36BE-4D33-ADA5-D19C07B703CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE48258F-36BE-4D33-ADA5-D19C07B703CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDC1CA6-7FC8-463C-B5ED-DA1E0D997B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDC1CA6-7FC8-463C-B5ED-DA1E0D997B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDC1CA6-7FC8-463C-B5ED-DA1E0D997B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDC1CA6-7FC8-463C-B5ED-DA1E0D997B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC4B77B-AA86-4E84-8703-2630EA68CBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC4B77B-AA86-4E84-8703-2630EA68CBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC4B77B-AA86-4E84-8703-2630EA68CBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC4B77B-AA86-4E84-8703-2630EA68CBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B153789A-6F87-4A8A-A009-DA4302FD620C}
+	EndGlobalSection
+EndGlobal
