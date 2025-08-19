@@ -1,0 +1,13 @@
+Khi bạn chạy lệnh Add-Migration InitialCreate, bạn cần chọn đúng project chứa DbContext — tức là project có class MyDbContext. Trong trường hợp của bạn, đó là project AppData:
+
+Add-Migration InitialCreate -StartupProject AppAPI -Project AppData
+
+các tham số trong đó:
+
+-Project		Project chứa DbContext và nơi lưu migration (→ AppData)
+-StartupProject		Project khởi chạy ứng dụng (→ AppAPI, nơi có Program.cs)
+
+-------------------
+Sau khi chạy Add-Migration, sẽ thấy thư mục Migrations trong AppData chứa file migration:
+
+Update-Database -StartupProject AppAPI -Project AppData
